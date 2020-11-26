@@ -13,10 +13,15 @@
     3. home slide
     4. home icon ic
     5. home seventh
-    6. components
-    7. custom    
-    8. utility
-    9. vendors
+    6. home just
+    7. home make    
+    8. home Features
+    9. home Features
+    10. home fund
+    11. Page title
+    12. Page contact
+    13. Page FAQ
+    *. Reponsive
 ------------------------------------------------------------------ */
 
 :root {
@@ -1433,6 +1438,70 @@ body {
 }
 
 
+/* [ 13. Page Advantages ] */
+
+.page-advantages {
+    background-color: #252525;
+    background-image: url(../images/body-bg.png);
+    padding: 90px 0;
+}
+
+.page-advantages .page-advantages__item {
+    position: relative;
+    display: block;
+    background-image: -moz-linear-gradient( 90deg, rgb(37, 37, 37) 0%, rgb(53, 53, 53) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(37, 37, 37) 0%, rgb(53, 53, 53) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(37, 37, 37) 0%, rgb(53, 53, 53) 100%);
+    padding-top: 50px;
+    padding-bottom: 42px;
+    border: 1px solid #2B2B2B;
+    margin-bottom: 30px;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.page-advantages .page-advantages__item .icon {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.page-advantages .page-advantages__item .text .text-title {
+    color: var(--c-white);
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.page-advantages .page-advantages__item .text {
+    padding: 0 12px;
+}
+
+.page-advantages .page-advantages__item .text .text-desc {
+    font-size: 15px;
+    color: rgb(132, 132, 132);
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.page-advantages .page-advantages__item .icon span:before {
+    color: var(--c-yellow);
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.page-advantages .page-advantages__item:hover {
+    background: var(--c-yellow);
+}
+
+.page-advantages .page-advantages__item:hover .icon span:before,
+.page-advantages .page-advantages__item:hover .text .text-title,
+.page-advantages .page-advantages__item:hover .text .text-desc {
+    color: var(--c-black);
+}
+
+
 /* [ *. Reponsive] */
 
 @media (max-width: 1500px) {
@@ -1479,6 +1548,19 @@ body {
     }
     .home-make iframe {
         width: 100% !important;
+    }
+    .page-about .page-about--info .page-about--info__img {
+        margin-top: 30px;
+    }
+    .page-about .page-about--area .page-about--area__title h4 {
+        text-align: center;
+    }
+    .page-about .page-about--area .page-about--area__title h4 {
+        margin-bottom: 50px;
+    }
+    .page-about .page-about--area .page-about--area__title h4:before {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -1669,5 +1751,25 @@ body {
     }
     .page-contact .page-contact__maps .page-contact__maps-text h4 {
         font-size: 18px;
+    }
+    .page-about .page-about--info .page-about--info__text h4,
+    .page-about .page-about--certificate .page-about--certificate-title h4,
+    .page-about .page-about--area .page-about--area__title h4 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .page-about .page-about--area .page-about--area__list li h5 {
+        font-size: 32px;
+        line-height: 60px;
+    }
+    .page-about .page-about--area .page-about--area__list {
+        flex-wrap: wrap;
+    }
+    .page-about .page-about--area .page-about--area__list li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .page-about .page-about--certificate .embed-pdf {
+        margin-bottom: 30px;
     }
 }
