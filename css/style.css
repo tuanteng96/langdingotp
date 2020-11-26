@@ -1060,6 +1060,7 @@ body {
     margin-bottom: 10px;
     letter-spacing: 5px;
     color: var(--c-yellow);
+    text-transform: uppercase;
 }
 
 .page-title .page-title__box .page-title__box-title {
@@ -1147,8 +1148,6 @@ body {
     height: 730px;
     display: block;
 }
-
-.page-contact .page-contact__text {}
 
 .page-contact .page-contact__text h3 {
     color: transparent;
@@ -1274,6 +1273,163 @@ body {
     font-weight: 400;
     line-height: 1.63;
     border-top: 1px solid #31363e;
+}
+
+
+/* [ 13. Page About ] */
+
+.page-about .page-about--info {
+    padding: 90px 0;
+}
+
+.page-about .page-about--info .page-about--info__img img {
+    width: 100%;
+    display: block;
+}
+
+.page-about .page-about--info .page-about--info__text h4 {
+    display: block;
+    color: var(--c-black);
+    font-size: 42px;
+    line-height: 52px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.page-about .page-about--info .page-about--info__text h4::before {
+    content: "";
+    background-image: url(../images/decor.png);
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 6px;
+    bottom: 0;
+}
+
+.page-about .page-about--info .page-about--info__text .sub {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--c-black);
+    font-weight: 500;
+}
+
+.page-about .page-about--info .page-about--info__text .content {
+    font-size: 15px;
+    color: #848484;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.page-about .page-about--area {
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 110px 0;
+    background-image: url(http://st.ourhtmldemo.com/new/Tradico/images/resources/fact-counter-bg.jpg);
+}
+
+.page-about .page-about--area:before {
+    background: rgba(0, 0, 0, 0.83) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.page-about .page-about--area:after {
+    background: url(http://st.ourhtmldemo.com/new/Tradico/images/resources/fact-counter-bottom-bg.png);
+    background-repeat: no-repeat;
+    content: "";
+    height: 127px;
+    left: 0;
+    position: absolute;
+    bottom: -35px;
+    width: 100%;
+    z-index: -1;
+}
+
+.page-about .page-about--area .page-about--area__title h4 {
+    color: var(--c-white);
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.page-about .page-about--area .page-about--area__title h4:before {
+    content: "";
+    background-image: url(../images/decor.png);
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 6px;
+    bottom: 0;
+}
+
+.page-about .page-about--area .page-about--area__list {
+    display: flex;
+    color: var(--c-white);
+}
+
+.page-about .page-about--area .page-about--area__list li {
+    width: 33.3333%;
+}
+
+.page-about .page-about--area .page-about--area__list li h5 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 65px;
+}
+
+.page-about .page-about--area .page-about--area__list li h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--c-yellow);
+    margin-top: 5px;
+}
+
+.page-about .page-about--certificate {
+    padding: 90px 0;
+    background: #f7f7f7;
+}
+
+.page-about .page-about--certificate .page-about--certificate-title h4 {
+    text-align: center;
+    color: var(--c-black);
+    font-size: 42px;
+    line-height: 52px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.page-about .page-about--certificate .page-about--certificate-title h4:before {
+    content: "";
+    background-image: url(../images/decor.png);
+    position: absolute;
+    display: block;
+    width: 90px;
+    height: 6px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-about .page-about--certificate .embed-pdf embed {
+    width: 100%;
+    min-height: 500px;
+    display: block;
 }
 
 
